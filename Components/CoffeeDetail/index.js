@@ -43,7 +43,7 @@ class CoffeeDetail extends Component {
     const { coffeeShops, loading } = this.props.coffeeReducer;
     if (loading) return <Content />;
 
-    const coffeeshop = coffeeshops[0];
+    const coffeeshop = coffeeShops[0];
     return (
       <Content>
         <List>
@@ -56,7 +56,7 @@ class CoffeeDetail extends Component {
             </Left>
             <Body />
             <Right>
-              <Thumbnail bordered source={coffeeshop.img} />
+              <Thumbnail bordered source={{ uri: coffeeshop.img }} />
             </Right>
           </ListItem>
           <ListItem style={{ borderBottomWidth: 0 }}>

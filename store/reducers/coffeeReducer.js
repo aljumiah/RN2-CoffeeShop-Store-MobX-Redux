@@ -2,7 +2,7 @@ import * as actionTypes from "../actions/types";
 
 const initialState = {
   coffeeShops: [],
-  loading: false
+  loading: true
 };
 
 const coffeeReducer = (state = initialState, action) => {
